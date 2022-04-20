@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting</title>
+    <script src="../практика/bank.js"></script>
+</head>
+<body>
+    <style>
+        .textarea{
+            margin-top: 14px;
+            margin-left: 10px;
+        }
+    </style>
+  
+        <div style="display: flex;">
+             <DIV>
+                    <p>Сума кредитування</p>
+                    <p>Процентна ставка</p>
+                    <p>Строк</p>
+             </DIV>
+           
+           
+            <div>
+              <form>
+                       <input type="text" size="10px" id="sum" class="textarea">
+                    </br>  <select id = "proc"class="textarea">
+                        <option value="17">17 %</option>
+                        <option value="23">23 %</option>
+                    
+                      </select>
+              </br>  <select id="mons" class="textarea">
+                         <option value="3">3 місяці</option>
+                         <option value="6">6 місяці</option>
+                         <option value="12">1 рік</option>
+                         <option value="24">2 роки</option>
+                       </select>
+                      
+        </div>
+        </div>
+            <div>
+                <button onclick="countBankfix()" >Місячний платіж</button>
+        </div>
+        
+    </form>
+       
+  
+</body>
+</html>
