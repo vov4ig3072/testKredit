@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новий БАНК</title>
+    <script src="bank.js"></script>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+
+        h1, button{
+            margin-top: 14px;
+            margin-left: 10px;
+        }
+        th{
+            align-content: center;
+        }
+
+        </style>
+        
+</head>
+<body>
+    
+    <div>
+        <h1>Створи свій Банк</h1>
+        <form >
+        <table>
+            <tr><th>Назва Банку</th><th>Сумма кредитування</th><th>Річна відсоткова ставка</th><th>Строк (місяців)</th></tr>
+                 <tr><td><input type="text" size="25px" id="nameBank" class="textarea"></td><td><input type="text" size="25px" id="summ" class="textarea"></td>
+                 <td><input type="text" size="25px" id="proc" class="textarea"></td><td><input type="text" size="25px" id="month" class="textarea"></td></tr>
+        </table>
+
+        <button type="button" onclick="newBank()">Створити</button>
+    </form>
+    </div>
+   <div  id="table"></div>
+
+</body>
+</html>
